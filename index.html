@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box; overflow: auto;}
+        .container{width: 100%; margin: 0 auto; border:2px black solid; }
+        .header{width: 100%; height: 50px; border:1px black solid; text-align: center;}
+        .nav li{width: 150px; height: 50px; margin: 1em; display: inline-block; background-color: deepskyblue; text-align: center; vertical-align: middle;}
+        .content{width:100%; height: auto; border:1px red solid;}
+        #left{width:25%; border:2px orange solid; float:left; overflow:auto; padding:2%;}
+        #right{width:75%; border:2px blue solid; float:right; overflow:auto; padding:2%;}
+        .thumbnail{width:33%; border:0px purple solid; float:left; overflow:auto; padding:2%; display: block;}
+        .box{width:34%; border:0px green solid; float:left; overflow:auto; padding:2%; display: block;}
+        .inner{height:300px; border:2px pink solid; display: block;}
+        .footer{width: 100%; height: 50px; border:1px black solid; clear:both; text-align: center}
+        #AD{position: fixed; top: 100px; left: 90%; display: block; background-color: crimson; width: 150px; height: 100px; text-align: center;}
+        .ADlink{position: relative; top: -25px; left: 120px; display: block; background-color: cyan; width: 30px; height: 30px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header100%</div>
+        <div class="content">
+            <div id="left"><div class="inner">21%</div></div>
+            <div id="right"><div class="inner">71%</div></div>
+        </div>
+        <div class="footer">footer100%</div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>古早味三欄
+        <div class="container">
+            <div>
+            <ul class="nav">
+                <li>1.選單</li>
+                <li>2.選單</li>
+                <li>3.選單</li>
+                <li>4.選單</li>
+                <li>5.選單</li>
+            </ul>
+            </div>
+            <div id=AD>廣告<span class="ADlink">→</span></div>
+            <div class="header">header</div>
+            <div class="content-box">
+                <div class="thumbnail"><div class="inner">1</div></div>
+                <div class="thumbnail"><div class="inner">2</div></div>
+                <div class="box"><div class="inner">3</div></div>    
+            </div>
+            <div class="footer">footer</div>
+        </div>
+</body>
+</html>
